@@ -1,10 +1,41 @@
-<Doctype HTML>
-    <html>
-    <head>
-      <title>your mum</title>
-        <meta property="og:title" content="Fuck you echo">
-    </head>
-    <body style="background-color:gray;">
-        <div style="margin: 0, auto; font-size: 450px;">fuck you echo</div>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>Fuck off</title>
+    <style>
+    p, h1 {
+        color: green;
+    }
+    </style>
+  
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+     
+      <script>
+     
+    /* Add "https://api.ipify.org?format=json" statement
+               this will communicate with the ipify servers in
+               order to retrieve the IP address $.getJSON will
+               load JSON-encoded data from the server using a
+               GET HTTP request */
+                
+    $.getJSON("https://api.ipify.org?format=json", function(data) {
+         
+        // Setting text of element P with id gfg
+        $("#fuck you").html(data.ip);
+    })
+    </script>
+</head>
+ 
+<body>
+    <center>
+        <h1>Fuck you</h1>
+        <h3>Your ip:</h3>
+        <p id="fuck you"></p>
+ 
+    </center>
+</body>
+ 
+</html>
